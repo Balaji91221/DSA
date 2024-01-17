@@ -7,7 +7,8 @@ public class Main {
         // Input for array a1
         int[] a1 = readArray(scanner);
 
-        // Input for array a2
+        // Input for array a20.
+        
         int[] a2 = readArray(scanner);
 
         // Apply Bubble Sort on a1 and reflect swaps on a2
