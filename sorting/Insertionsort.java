@@ -13,10 +13,10 @@ public class Insertionsort {
 
         Insertionsort sorter = new Insertionsort();
         
-        // Call the sort method
+        
         sorter.sort(arr);
 
-        // Print the sorted array
+        
         sorter.printArray(arr, n);
     }
 

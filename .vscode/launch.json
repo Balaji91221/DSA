@@ -1,0 +1,358 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ArmStrong",
+            "request": "launch",
+            "mainClass": "ArmStrong",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "BitFirstThree",
+            "request": "launch",
+            "mainClass": "BitFirstThree",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "BitLastThree",
+            "request": "launch",
+            "mainClass": "BitLastThree",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Bubblesort",
+            "request": "launch",
+            "mainClass": "Bubblesort",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Check_Kth",
+            "request": "launch",
+            "mainClass": "Check_Kth",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Csort",
+            "request": "launch",
+            "mainClass": "Csort",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "DO",
+            "request": "launch",
+            "mainClass": "DO",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Divisor",
+            "request": "launch",
+            "mainClass": "Divisor",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "EvenDO",
+            "request": "launch",
+            "mainClass": "EvenDO",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "GCD",
+            "request": "launch",
+            "mainClass": "GCD",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Insertionsort",
+            "request": "launch",
+            "mainClass": "Insertionsort",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Lcmoftwonumbers",
+            "request": "launch",
+            "mainClass": "Lcmoftwonumbers",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Leadersarray",
+            "request": "launch",
+            "mainClass": "Leadersarray",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Max_Equlibrium_Sum",
+            "request": "launch",
+            "mainClass": "Max_Equlibrium_Sum",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Palindrome",
+            "request": "launch",
+            "mainClass": "Palindrome",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Reverseint",
+            "request": "launch",
+            "mainClass": "Reverseint",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "Selectionsort",
+            "request": "launch",
+            "mainClass": "Selectionsort",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "arraysort",
+            "request": "launch",
+            "mainClass": "arraysort",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "bs",
+            "request": "launch",
+            "mainClass": "bs",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "checkPrime",
+            "request": "launch",
+            "mainClass": "checkPrime",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "computingpower",
+            "request": "launch",
+            "mainClass": "computingpower",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "counts",
+            "request": "launch",
+            "mainClass": "counts",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "countsetbit",
+            "request": "launch",
+            "mainClass": "countsetbit",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "factorial",
+            "request": "launch",
+            "mainClass": "factorial",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "iterativepower",
+            "request": "launch",
+            "mainClass": "iterativepower",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "ls",
+            "request": "launch",
+            "mainClass": "ls",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "majorityelement",
+            "request": "launch",
+            "mainClass": "majorityelement",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "mergesort",
+            "request": "launch",
+            "mainClass": "mergesort",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "oneoddoccurring",
+            "request": "launch",
+            "mainClass": "oneoddoccurring",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "pattern1",
+            "request": "launch",
+            "mainClass": "pattern1",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "pattern2",
+            "request": "launch",
+            "mainClass": "pattern2",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "pattern3",
+            "request": "launch",
+            "mainClass": "pattern3",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "pattern4",
+            "request": "launch",
+            "mainClass": "pattern4",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "pattern5",
+            "request": "launch",
+            "mainClass": "pattern5",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "pattern6",
+            "request": "launch",
+            "mainClass": "pattern6",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "pattern7",
+            "request": "launch",
+            "mainClass": "pattern7",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "pattern8",
+            "request": "launch",
+            "mainClass": "pattern8",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "poweroftwo",
+            "request": "launch",
+            "mainClass": "poweroftwo",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "powerset",
+            "request": "launch",
+            "mainClass": "powerset",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "practice1",
+            "request": "launch",
+            "mainClass": "practice1",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "practice2",
+            "request": "launch",
+            "mainClass": "practice2",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "practice3",
+            "request": "launch",
+            "mainClass": "practice3",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "primefactors",
+            "request": "launch",
+            "mainClass": "primefactors",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "quicksort",
+            "request": "launch",
+            "mainClass": "quicksort",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "sievealgorithm",
+            "request": "launch",
+            "mainClass": "sievealgorithm",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "sortedunique",
+            "request": "launch",
+            "mainClass": "sortedunique",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "trailingzero",
+            "request": "launch",
+            "mainClass": "trailingzero",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "twooddoccuring",
+            "request": "launch",
+            "mainClass": "twooddoccuring",
+            "projectName": "DSA_3a3e3af1"
+        }
+    ]
+}

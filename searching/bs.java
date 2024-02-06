@@ -11,10 +11,6 @@ public class bs {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-
-        // Sort the array before performing binary search
-        //Arrays.sort(arr);
-
         System.out.println("Enter the target element to search for:");
         int target = sc.nextInt();
 
