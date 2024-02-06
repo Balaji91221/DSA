@@ -4,7 +4,20 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "Mazesolving",
+            "request": "launch",
+            "mainClass": "Backtracking.Mazesolving",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "nqueen",
+            "request": "launch",
+            "mainClass": "Backtracking.nqueen",
+            "projectName": "DSA_3a3e3af1"
+        },
         {
             "type": "java",
             "name": "Current File",

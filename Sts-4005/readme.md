@@ -1,15 +1,15 @@
 # 🚀 STS4005 Coding Challenges Repository
 
-## [Max Equilibrium Sum](./Max-Equilibrium-Sum.java)
+## [Max Equilibrium Sum](/Sts-4005/Max_Equlibrium_Sum.java)
 *Category: 🔍 Searching*
 
-## [Leaders in Array](/searching/leadersarray.java)
+## [Leaders in Array](/Sts-4005/Leadersarray.java)
 *Category: 🔍 Searching*
 
 ## [Majority Element](/searching/majorityelement.java)
 *Category: 🔍 Searching*
 
-## [Natural Sort Order](/sorting/naturalsortorder.java)
+## [Natural Sort Order](/sorting/Bubblesort.java)
 *Category: 🔄 Sorting*
 
 ## [Quick Sort](/sorting/quicksort.java)
