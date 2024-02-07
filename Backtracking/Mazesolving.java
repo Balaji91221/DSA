@@ -16,14 +16,12 @@ import java.util.Scanner;
             sol[x][y]=1;
             return true;
         }
-        //we need check 1 is there or not at that particular x,y index
+        
         if(issafe(a,x,y,n)==true){
             sol[x][y]=1;
-            if(solve(a,x+1,y,sol,n))//rat will move in forward direction
-            //check 1 is there or not 
+            if(solve(a,x+1,y,sol,n))
             return true;
-            if(solve(a,x,y+1,sol,n)) //rat will move in downward direction
-            //and checks 1 is there or not
+            if(solve(a,x,y+1,sol,n)) 
             return true;
             sol[x][y]=0;
             return false;

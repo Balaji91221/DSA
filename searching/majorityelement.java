@@ -1,42 +1,34 @@
 import java.util.Scanner;
 
 public class majorityelement {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the size of the array: ");
+        int n = scanner.nextInt();
+        
+        int[] arr = new int[n];
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
 
-    static int findMajorityElement(int[] arr, int n) {
         int index = 0, max = 0, count;
-
         for (int i = 0; i < n; i++) {
             count = 0;
-
             for (int j = 0; j < n; j++) {
                 if (arr[i] == arr[j]) {
                     count++;
                 }
             }
-
             if (count > max) {
                 max = count;
                 index = i;
             }
         }
-
-        return index;
-    }
-
-    public static void main(String[] args) {
-        int arr[] = {2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3};
-        int n = arr.length;
-
-        int majorityElementIndex = findMajorityElement(arr, n);
-
-        int majorityElement = arr[majorityElementIndex];
-        int maxCount = n / 2;
-        int max = 0; // Declare the "max" variable
-
-        if (maxCount > 0 && maxCount >= max) {
-            System.out.println("Majority element: " + majorityElement);
-        } else {
+        if (max > n / 2)
+            System.out.println("Majority element: " + arr[index]);
+        else
             System.out.println("No majority element");
-        }
     }
 }

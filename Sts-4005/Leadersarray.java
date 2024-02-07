@@ -1,23 +1,33 @@
-import java.io.*;
+import java.util.Scanner;
 
-public class Leadersarray {
+public class LeadersArray {
 
-    static void findLeaders(int[] arr, int size) {
-        for (int i = 0; i < size; i++) {
+    static void findLeaders(int[] arr, int n) {
+        for (int i = 0; i < n; i++) {
             int j;
-            for (j = i + 1; j < size; j++) {
+            for (j = i + 1; j < n; j++) {
                 if (arr[i] <= arr[j])
                     break;
             }
-            if (j == size) // the loop didn't break
+            if (j == n) // the loop didn't break
                 System.out.print(arr[i] + " ");
         }
     }
 
     public static void main(String[] args) {
-        int arr[] = new int[]{16, 17, 4, 3, 5, 2};
-        int size = arr.length;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
+
+        int[] arr = new int[size];
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < size; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
         findLeaders(arr, size);
     }
 }
+
 
