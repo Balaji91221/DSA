@@ -1,0 +1,2 @@
+# LinkedList
+# This idea is to drop the contiguous memory requirements so that insertions ,deletion can efficiently happen at the middle also And no need to pre-allocate the space (like no extra Nodes)

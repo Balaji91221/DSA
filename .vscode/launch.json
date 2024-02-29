@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Mergesortdll",
+            "request": "launch",
+            "mainClass": "Mergesortdll",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "max",
+            "request": "launch",
+            "mainClass": "practice.max",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
+            "name": "nqueen",
+            "request": "launch",
+            "mainClass": "practice.nqueen",
+            "projectName": "DSA_3a3e3af1"
+        },
+        {
+            "type": "java",
             "name": "Mazesolving",
             "request": "launch",
             "mainClass": "Backtracking.Mazesolving",

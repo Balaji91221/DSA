@@ -2,18 +2,12 @@ package Backtracking;
 import java.util.Scanner;
 
  public class Mazesolving {
-    static void printsol(int sol[][],int n){
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++) System.out.print(" "+sol[i][j]+" ");
-            System.out.println();
+     static boolean issafe(int a[][],int x,int y,int n){
+         return (x>=0&&x<n&&y>=0&&y<n&&a[x][y]==1);
         }
-    }
-    static boolean issafe(int a[][],int x,int y,int n){
-        return (x>=0&&x<n&&y>=0&&y<n&&a[x][y]==1);
-    }
-    static boolean solve(int a[][],int x,int y,int sol[][],int n){
-        if(x==n-1&&y==n-1){//rat reaches the destination
-            sol[x][y]=1;
+        static boolean solve(int a[][],int x,int y,int sol[][],int n){
+            if(x==n-1&&y==n-1){
+                sol[x][y]=1;
             return true;
         }
         
@@ -27,6 +21,13 @@ import java.util.Scanner;
             return false;
         }
         return false;
+    }
+
+    static void printsol(int sol[][],int n){
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++) System.out.print(" "+sol[i][j]+" ");
+            System.out.println();
+        }
     }
     static boolean solvemaze(int a[][],int n){
         int sol[][]=new int[n][n];//to store o/P
@@ -48,3 +49,10 @@ import java.util.Scanner;
     }
 }
 // Time Complexity: O(2^(n^2))
+// Space Complexity: O(n^2)
+// Input:
+// 4
+// 1 0 0 0
+// 1 1 0 1
+// 0 1 0 0
+// 1 1 1 1

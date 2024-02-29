@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LeadersArray {
+public class Leadersarray {
 
     static void findLeaders(int[] arr, int n) {
         for (int i = 0; i < n; i++) {
@@ -18,15 +18,15 @@ public class LeadersArray {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the size of the array: ");
-        int size = scanner.nextInt();
+        int n = scanner.nextInt();
 
-        int[] arr = new int[size];
+        int[] arr = new int[n];
         System.out.println("Enter the elements of the array:");
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
         }
 
-        findLeaders(arr, size);
+        findLeaders(arr, n);
     }
 }
 

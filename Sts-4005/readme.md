@@ -41,3 +41,9 @@
 
 ## [Hamiltonian Cycle](/Backtracking/HamiltonianCycle.java)
 *Category: 🔍 Backtracking*
+
+## [Sort in bitonic using DLL](./DLL.java)
+*Category: 🔍 LinkedList*
+
+## [Merge Sort Using DLL](./Mergesortdll.java)
+*Category: LinkedList*
