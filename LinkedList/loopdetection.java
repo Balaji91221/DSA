@@ -1,38 +1,84 @@
 package LinkedList;
+import java.util.Scanner;
 
 public class loopdetection {
-    class node{
+    static class Node {
         int data;
-        node next;
-        node(int n){
-            data=n;
-            next=null;
+        Node next;
+
+        Node(int n) {
+            data = n;
+            next = null;
         }
     }
-    static void createloop(node head){
-        node f1= head;
-        node f2= head;
-        int count=1;
-        while(f2.next!=null){
-            f2=f2.next;
-            count++;
-            
+
+    static Node createLinkedList() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of elements:");
+        int n = scanner.nextInt();
+        Node head = null;
+        Node tail = null;
+        System.out.println("Enter the elements:");
+        for (int i = 0; i < n; i++) {
+            int value = scanner.nextInt();
+            Node newNode = new Node(value);
+            if (head == null) {
+                head = newNode;
+                tail = newNode;
+            } else {
+                tail.next = newNode;
+                tail = newNode;
+            }
         }
-        while (count != 0){
-            f1=f1.next;
-            count++;
-            
-        }
-        f2.next=f1;
+        scanner.close();
+        return head;
     }
-    static boolean detectloop(node head){
-        node slow=head;
-        node fast=head;
-        while(slow!=null&&fast!=null&&fast.next!=null){
-            slow=slow.next;
-            fast=fast.next.next;
-            if(slow==fast) return true;
+
+    static void createLoop(Node head) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the index where you want the loop to start (0-based index):");
+        int loopIndex = scanner.nextInt();
+        Node loopNode = head;
+        while (loopIndex > 0 && loopNode != null) {
+            loopNode = loopNode.next;
+            loopIndex--;
+        }
+        if (loopNode == null) {
+            System.out.println("Invalid index. Loop cannot be created.");
+            return;
+        }
+        Node tail = head;
+        while (tail.next != null) {
+            tail = tail.next;
+        }
+        tail.next = loopNode;
+        System.out.println("Loop created successfully at index " + loopIndex);
+    }
+
+    static boolean detectLoop(Node head) {
+        Node slow = head;
+        Node fast = head;
+        while (slow != null && fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast)
+                return true;
         }
         return false;
+    }
+
+    public static void main(String[] args) {
+        // Creating a linked list
+        Node head = createLinkedList();
+
+        // Creating a loop
+        createLoop(head);
+
+        // Detecting loop
+        boolean loopExists = detectLoop(head);
+        if (loopExists)
+            System.out.println("Loop detected in the linked list.");
+        else
+            System.out.println("No loop detected in the linked list.");
     }
 }
