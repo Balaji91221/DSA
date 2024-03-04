@@ -95,3 +95,4 @@ public class SLL {
     }
 }
 
+//write the for k reverse code
