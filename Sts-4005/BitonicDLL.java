@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class DLL{
+public class BitonicDLL{
      node head = null;
      class node{
         int data;
@@ -80,7 +80,7 @@ public class DLL{
      public static void main(String[] arg){
         Scanner sw = new Scanner(System.in);
         int n=sw.nextInt();
-        DLL l=new DLL();
+        BitonicDLL l=new BitonicDLL();
         for(int i=0;i<n;i++){
             l.insert(sw.nextInt());
         }
@@ -90,3 +90,10 @@ public class DLL{
         l.display();
      }
 }
+
+// bitonic sequence is a sequence that first increases and then decreases
+// the sequence is first sorted in increasing order and then sorted in decreasing order
+// the sequence is called bitonic sequence
+//output
+// 1<-->2<-->3<-->4<-->5<-->6<-->7<-->8<-->9<-->10<-->null
+// 1<-->2<-->3<-->4<-->5<-->10<-->9<-->8<-->7<-->6<-->null

@@ -42,8 +42,13 @@
 ## [Hamiltonian Cycle](/Backtracking/HamiltonianCycle.java)
 *Category: 🔍 Backtracking*
 
-## [Sort in bitonic using DLL](./DLL.java)
+## [Sort in bitonic using DLL](./BitonicDLL.java.java)
 *Category: 🔍 LinkedList*
 
 ## [Merge Sort Using DLL](./Mergesortdll.java)
+*Category: LinkedList*
+## [ segaration of even and odd](../LinkedList/SegEvenoodd.java)
+*Category: 🔍 LinkedList*
+
+## [Loop detection](../LinkedList/loopdetection.java)
 *Category: LinkedList*
