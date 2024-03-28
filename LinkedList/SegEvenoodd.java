@@ -1,4 +1,4 @@
-
+package LinkedList;
 import java.util.Scanner;
 public class SegEvenoodd{
     static node head=null;

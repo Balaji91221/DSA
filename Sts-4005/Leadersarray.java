@@ -5,7 +5,7 @@ public class Leadersarray {
     static void findLeaders(int[] arr, int n) {
         for (int i = 0; i < n; i++) {
             int j;
-            for (j = i + 1; j < n; j++) {
+            for ( j = i + 1; j < n; j++) {
                 if (arr[i] <= arr[j])
                     break;
             }
@@ -30,4 +30,5 @@ public class Leadersarray {
     }
 }
 
-
+//input 4 7 1 0
+//ouput 

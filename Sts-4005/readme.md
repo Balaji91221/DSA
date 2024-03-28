@@ -42,7 +42,7 @@
 ## [Hamiltonian Cycle](/Backtracking/HamiltonianCycle.java)
 *Category: 🔍 Backtracking*
 
-## [Sort in bitonic using DLL](./BitonicDLL.java.java)
+## [Sort in bitonic using DLL](./BitonicDLL.java)
 *Category: 🔍 LinkedList*
 
 ## [Merge Sort Using DLL](./Mergesortdll.java)
@@ -52,3 +52,19 @@
 
 ## [Loop detection](../LinkedList/loopdetection.java)
 *Category: LinkedList*
+
+## [minimum stack](../stack/minimumstack.java)
+*Category: Stack*
+
+## [celebrity](../stack/celebrity.java)
+*Category: Stack*
+
+## [tower of honoi](../stack/towerofhonoi.java)
+*Category: Stack*
+
+## [stockspan](../stack/stockspan.java)
+*Category: Stack*
+
+## [priorityQueue](../Queue/priorityq.java)
+*Category: Queue*
+

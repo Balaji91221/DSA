@@ -75,9 +75,6 @@ public class SLL {
 
         
     }
-    static void rotation(){
-
-    }
 
     public static void main(String[] args) {
         Scanner sw = new Scanner(System.in);
