@@ -46,3 +46,15 @@ public class celebrity{
     }
     
 }
+
+// Time complexity: O(n)
+// Space complexity: O(n)
+// Input:
+// 4
+// 0 0 1 0
+// 0 0 1 0
+// 0 0 0 0
+// 0 0 1 0
+// Output:
+// celebrity is 3
+// celebrity is 3

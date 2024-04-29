@@ -28,25 +28,20 @@ public class quicksort {
     }
 
     static int partition(int[] arr, int low, int high) {
-        int pivot = arr[high];
-        int i = low - 1;
+        int i=low;
+        int j=low;
+        int pivot=arr[high];
+        while(i<=high){
+            if(arr[i]<=pivot){
+                int temp= arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+                j++;
 
-        for (int j = low; j < high; j++) {
-            if (arr[j] < pivot) {
-                i++;
-           
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
             }
+            i++;
         }
-
-       
-        int temp = arr[i + 1];
-        arr[i + 1] = arr[high];
-        arr[high] = temp;
-
-        return i + 1;
+        return j-1;
     }
 
     static void printArray(int[] arr, int size) {
