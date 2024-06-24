@@ -1,13 +1,13 @@
 import java.util.Scanner;
 import java.util.Stack;
 class Main{
-    static Stack<Integer> sr = new Stack<>();
-    static Stack<Integer> ax = new Stack<>();
-    static Stack<Integer> ds = new Stack<>();
+    static Stack<Integer> sr = new Stack<>();//sr source
+    static Stack<Integer> ax = new Stack<>();// ax auxiliary
+    static Stack<Integer> ds = new Stack<>();// ds destination
     static void change(Stack<Integer> s1,Stack<Integer> s2,char a,char b){
         int v1,v2;
         if(s1.isEmpty()) v1=Integer.MIN_VALUE;
-        else v1=s1.pop();
+        else v1=s1.pop();   
         if(s2.isEmpty()) v2=Integer.MIN_VALUE;
         else v2=s2.pop();
         if(v1==Integer.MIN_VALUE){

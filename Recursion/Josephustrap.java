@@ -1,4 +1,4 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 class Josephustrap{
     static int jos(int n,int k){  //5 3
         if(n==1) 
@@ -12,3 +12,6 @@ class Josephustrap{
         System.out.print(jos(n,k));
     }
 }
+
+//3 3
+
