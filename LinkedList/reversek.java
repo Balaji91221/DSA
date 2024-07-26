@@ -1,7 +1,7 @@
 package LinkedList;
 import java.util.Scanner;
 
-class LinkedList {
+public class reversek {
     class Node {
         int val;
         Node next;
@@ -15,7 +15,7 @@ class LinkedList {
     Node head;
     Node tail;
 
-    LinkedList() {
+    reversek() {
         this.head = null;
         this.tail = null;
     }
@@ -24,7 +24,7 @@ class LinkedList {
         Node temp = new Node(val);
         if (head == null) {
             head = temp;
-            tail=temp;
+            tail = temp;
         } else {
             tail.next = temp;
             tail = tail.next;
@@ -34,57 +34,65 @@ class LinkedList {
     void print() {
         Node temp = head;
         while (temp != null) {
-            System.out.println(temp.val);
+            System.out.print(temp.val + " ");
             temp = temp.next;
         }
+        System.out.println();
     }
 
-    void revByK(int k, int size) {
-    Node minusHead = new Node(-1);
-    minusHead.next = head;
-    head = minusHead;
-    Node dummyHead = head;
-
-    while (size >= k) {
-        int i = k - 1;
-        Node tempHead = dummyHead.next;
-        Node prev = tempHead;
-        Node curr = tempHead.next;
-        while (i > 0) {
-            Node next = curr.next;
-
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-            i--;
+    void revByK(int k) {
+        if (k <= 1 || head == null) {
+            return;
         }
-        tempHead.next = curr;
-        dummyHead.next = prev;
-        size -= k;
-        dummyHead = tempHead;
+
+        Node minusHead = new Node(-1);
+        minusHead.next = head;
+        head = minusHead;
+        Node dummyHead = head;
+        
+        while (true) {
+            Node tempHead = dummyHead;
+            for (int i = 0; i < k && tempHead != null; i++) {
+                tempHead = tempHead.next;
+            }
+            if (tempHead == null) break;
+
+            Node prev = null, curr = dummyHead.next, next = null;
+            Node tail = curr;
+            for (int i = 0; i < k; i++) {
+                next = curr.next;
+                curr.next = prev;
+                prev = curr;
+                curr = next;
+            }
+            
+            dummyHead.next = prev;
+            tail.next = curr;
+            dummyHead = tail;
+        }
+
+        head = head.next; // Remove the initial minusHead node
     }
-    head = minusHead.next;
-}
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        reversek list = new reversek();
+        int n;
+        int size = 0;
+
+        while (true) {
+            n = sc.nextInt();
+            if (n == -1) {
+                break;
+            }
+            list.insert(n);
+            size++;
+        }
+
+        int k = sc.nextInt();
+        list.revByK(k);
+        list.print();
+        sc.close();
+    }
 }
 
-class Main
-{
-  public static void main(String args[])
-  {
-    Scanner sc = new Scanner(System.in);
-    LinkedList list = new LinkedList();
-    int n = -1;
-    int size = 0;
-    do {
-    	n = sc.nextInt(); sc.nextLine();
-        if (n != -1){
-          list.insert(n);
-          size++;
-        }
-    } while(n!=-1);
-    
-    int k = sc.nextInt();
-    list.revByK(k, size);
-    list.print();
-  }
-}
