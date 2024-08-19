@@ -10,4 +10,12 @@ public class pattern6 {
             System.out.println();
         }
     }
+
 }
+
+//output
+// 5 4 3 2 1
+// 5 4 3 2
+// 5 4 3
+// 5 4
+// 5
